@@ -1,0 +1,30 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  --bg-green: linear-gradient(90deg, rgb(108 104 214) 0%, rgb(185 199 195) 100%);
+  --bg-red: linear-gradient(90deg, rgb(31 80 166) 0%, hsl(206deg 36.54% 72.23%) 100%);
+  --bg-brown: linear-gradient(90deg, rgb(4 0 99) 0%, rgb(0 120 149) 100%);
+  --bg-white: white;
+  --bg-modal: #0e110eaf;
+  --text-white: white;
+  --text-dark: rgb(54, 54, 54);
+  --text-light: #c7c7c7;
+  --text-gold: rgb(4 4 4);
+  --dark: #080808;
+  --border: 0.1rem solid rgb(224, 224, 224);
+}
+
+.App {
+  text-align: center;
+}
+
+.App-header {
+  height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  align-items: center;
+  justify-content: space-around;
+  font-family: "Poppins", sans-serif;
+  background: var(--bg-green);
+}
