@@ -5,6 +5,7 @@ const Modal = ({ handleNamesInput }) => {
 
     const [firstName, setFirstName] = useState("");
     const [secondName, setSecondName] = useState("");
+    const [error, setError] = useState("");
 
     const handleFirstNameInput = (e) => {
         e.preventDefault();
@@ -18,18 +19,25 @@ const Modal = ({ handleNamesInput }) => {
         setSecondName(secondNa);
     };
 
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        if (firstName !== "" || secondName !== "") {
+            handleNamesInput(firstName, secondName);
+        }
+    };
+
     return (
         <div id="modal">
             <div id="modal-content">
                 <h2> Enter Player Name </h2>
-                <form>
+                <form onSubmit={handleSubmit}>
                     <label htmlFor="player1"> Player 1 </label>
                     <input type="text" id="player1" name="Player 1" placeholder="Player 1" maxLength="10" required value={firstName} onChange={handleFirstNameInput} />
                     
                     <label htmlFor="player2">Player 2</label>
                     <input type="text" id="player2" name="Player 2" placeholder="Player 2" maxLength="10" required value={secondName} onChange={handleSecondNameInput} />
                     
-                    <input type="submit" value="Start Game" onClick={(e) => { e.preventDefault(); handleNamesInput( firstName, secondName); }} />
+                    <input type="submit" value="Start Game" />
                 </form>
             </div>
         </div>
