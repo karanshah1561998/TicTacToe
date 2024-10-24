@@ -5,7 +5,6 @@ const Modal = ({ handleNamesInput }) => {
 
     const [firstName, setFirstName] = useState("");
     const [secondName, setSecondName] = useState("");
-    const [error, setError] = useState("");
 
     const handleFirstNameInput = (e) => {
         e.preventDefault();
