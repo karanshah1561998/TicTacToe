@@ -4,7 +4,7 @@ A simple and responsive **TicTacToe** game built with **React**. This project al
 
 ## Live Demo
 
-You can view the live game on Netlify: [TicTacToe Game](https://karanshah-tictactoe-v1.netlify.app/)
+You can view the live game on Netlify: [TicTacToe Game](https://tictactoeks.netlify.app/)
 
 ## Features
 
