@@ -39,7 +39,7 @@ To run the app locally, follow these steps:
 
 ## Technologies Used
 - React: Frontend JavaScript framework for building interactive UIs.
-- CSS: For basic styling of the application.
+- CSS: This is for basic application styling.
 
 ## Future Enhancements
 
