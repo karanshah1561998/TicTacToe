@@ -63,3 +63,7 @@ Access the live app here: [TicTacToe Game](https://tictactoeks.netlify.app/)
 ### 4. Scores Not Updating
 - Verify that the score state logic is functioning and not being reset unintentionally.
 - Debug state updates using React DevTools.
+
+### 5. Netlify Deploy Fails
+- Ensure your build script is correctly defined in package.json.
+- Make sure npm install and npm run build work locally without errors before deploying.
