@@ -1,49 +1,65 @@
-# TicTacToe Game
+# 🎮 TicTacToe Game
 
-A simple and responsive **TicTacToe** game built with **React**. This project allows two players to compete in the classic Tic-Tac-Toe game, featuring customizable player names, score tracking, and a sleek user interface.
+A simple and responsive TicTacToe game built with **React**. This two-player game features customizable player names, score tracking, and a clean UI, making it perfect for friendly matchups on both desktop and mobile.
 
 ## Live Demo
+Access the live app here: [TicTacToe Game](https://tictactoeks.netlify.app/)
 
-You can view the live game on Netlify: [TicTacToe Game](https://tictactoeks.netlify.app/)
+## ✨ Features
+- Two-player mode
+- Customizable Player Names
+- Score Tracking
+- Responsive Design
+- Restart Game
 
-## Features
+## 🛠 Tech Stack
+- **Frontend**: React.js
+- **Styling**: CSS
+- **Hosting**: Netlify
 
-1.  **Two-player mode:** Play against another player on the same device.
-2.  **Customizable Player Names:** Players can enter their names before starting the game.
-3.  **Score Tracking:** Tracks the score for each player, persisting throughout multiple games.
-4.  **Responsive Design:** Optimized for desktop and mobile devices.
-5.  **Restart Game:** Easily restart the game while retaining the scores.
+## ⚙️ Installation
+### Prerequisites
+**Ensure you have the following installed:**
+- Node.js (v18+)
 
-## How to Play
-
-- Click the **"Start Game"** button.
-- Enter the player names in the modal.
-- The first player to get 3 of their symbols (X or O) in a row, column, or diagonal wins.
-- The game will reset after each round, and the scores will be updated.
-
-## Installation Instructions
-
-To run the app locally, follow these steps:
-
-1. **Clone the Repository:**
+### Setup
+1. **Clone the repository:**
    ```bash
-   git clone https://github.com/karanshah1561998/TicTacToe
+   git clone https://github.com/karanshah1561998/TicTacToe.git
+   cd TicTacToe
    
-2. **Install Dependencies: Navigate to the cloned repository's directory and run:**
+2. **Install dependencies:**
    ```bash
    npm install
    
-3. **Run the App: After the dependencies are installed, start the app using:**  
+3. **Start the app:**  
    ```bash
    npm start
 
-## Technologies Used
-- React: Frontend JavaScript framework for building interactive UIs.
-- CSS: This is for basic application styling.
+   Open http://localhost:3000 to view the game in your browser.
 
-## Future Enhancements
+## 🎲 How to Play
+- Click the "Start Game" button to begin.
+- Enter names for Player 1 and Player 2 in the popup modal.
+- Players take turns clicking on the board to place their symbol (X or O).
+- The first player to align 3 symbols in a row, column, or diagonal wins the round.
+- The board resets automatically after each round, and scores are updated.
+- Click "Restart Game" anytime to reset the board while keeping the current scores.
 
-- Single-player mode with an AI opponent (using different difficulty levels).
-- Game mode selection (multiplayer or AI).
-- Timer for moves and animations for winning lines.
-- Custom themes (light/dark mode).
+## 🧩 Troubleshooting
+
+### 1. App Not Starting
+- Make sure you have Node.js (v18+) installed.
+- Delete `node_modules` and run `npm install` again if there are dependency issues.
+
+### 2. Styles Not Loading
+- Check if CSS files are correctly imported in your components.
+- Try clearing your browser cache or doing a hard refresh.
+
+### 3. Game Board Not Rendering
+- Ensure you didn’t modify or delete core components like `Board` or `Square`.
+- Check the console for any React-related errors.
+
+### 4. Scores Not Updating
+- Verify that the score state logic is functioning and not being reset unintentionally.
+- Debug state updates using React DevTools.
